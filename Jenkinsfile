@@ -11,6 +11,7 @@ node{
     withSonarQubeEnv('sonar_demo') {
       sh "mvn sonar:sonar"
   }
+  }
     
   stage("Sending Emails"){
     mail bcc: '', 
